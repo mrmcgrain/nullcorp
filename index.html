@@ -8,6 +8,14 @@
 <meta property="og:title" content="NullCorp | From nothing to production">
 <meta property="og:description" content="Agentic systems. Security-first engineering. Production-grade delivery.">
 <meta property="og:image" content="assets/nullcorp-systems-hero.png">
+<script>
+  try {
+    const savedTheme = localStorage.getItem('nullcorp-theme');
+    document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  } catch {
+    document.documentElement.dataset.theme = 'dark';
+  }
+</script>
 <link rel="preload" as="image" href="assets/nullcorp-systems-hero.png">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,12 +25,27 @@
 <header id="site-header">
   <div class="header-inner">
     <a class="brand" href="#top"><b>N/</b>NULLCORP</a>
-    <nav>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
-      <a class="nav-cta" href="#contact">Start a project</a>
-    </nav>
+    <div class="header-controls">
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a class="nav-cta" href="#contact">Start a project</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+        <span class="theme-label">Theme</span>
+      </button>
+      <details class="mobile-nav">
+        <summary>Menu <span aria-hidden="true">+</span></summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#work">Work</a>
+          <a href="#approach">Approach</a>
+          <a class="nav-cta" href="#contact">Start a project</a>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>
 
@@ -257,7 +280,7 @@
     </div>
     <p class="intake-alt">Prefer email? <a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev</a></p>
   </form>
-  <div class="intake-success" id="intake-success" hidden aria-live="polite">
+  <div class="intake-success" id="intake-success" hidden aria-live="polite" tabindex="-1">
     <p class="intake-success-msg"><b>Received.</b> We'll be in touch within one business day.</p>
     <a class="email" href="mailto:hello@nullcorp.dev">hello@nullcorp.dev <b>↗</b></a>
   </div>

@@ -2,15 +2,35 @@
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
+// Theme preference — system-aware initially, explicit choice persisted.
+const root = document.documentElement;
+const themeToggle = document.querySelector('.theme-toggle');
+
+function applyTheme(theme, persist = false) {
+  root.dataset.theme = theme;
+  if (persist) {
+    try { localStorage.setItem('nullcorp-theme', theme); } catch {}
+  }
+  if (themeToggle) {
+    const isLight = theme === 'light';
+    themeToggle.setAttribute('aria-pressed', String(isLight));
+    themeToggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} mode`);
+    themeToggle.querySelector('.theme-label').textContent = isLight ? 'Light' : 'Dark';
+    themeToggle.querySelector('.theme-icon').textContent = isLight ? '☀' : '◐';
+  }
+}
+
+applyTheme(root.dataset.theme || 'dark');
+themeToggle?.addEventListener('click', () => {
+  applyTheme(root.dataset.theme === 'light' ? 'dark' : 'light', true);
+});
+
 // Sticky header on scroll
 const header = document.getElementById('site-header');
 if (header) {
-  const onScroll = () => {
-    header.style.background = scrollY > 10
-      ? 'rgba(8,9,8,.95)'
-      : 'rgba(8,9,8,.7)';
-  };
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 10);
   addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }
 
 // Reveal on scroll — lower threshold so content appears earlier
@@ -42,17 +62,29 @@ if (reduced || !('IntersectionObserver' in window)) {
 // Intake form — client-side handling with email validation
 const form = document.getElementById('intake-form');
 const successEl = document.getElementById('intake-success');
+const mobileNav = document.querySelector('.mobile-nav');
+
+if (mobileNav) {
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => { mobileNav.open = false; });
+  });
+}
 
 function showFieldError(field, msg) {
   field.classList.add('field-error');
   field.setAttribute('aria-invalid', 'true');
-  // Insert error message if not already present
+  // Insert an announced, programmatically associated error message.
   let errEl = field.parentElement.querySelector('.field-error-msg');
   if (!errEl) {
     errEl = document.createElement('span');
     errEl.className = 'field-error-msg';
+    errEl.id = `${field.id}-error`;
     errEl.setAttribute('role', 'alert');
     field.parentElement.appendChild(errEl);
+  }
+  const describedBy = field.getAttribute('aria-describedby') || '';
+  if (!describedBy.split(' ').includes(errEl.id)) {
+    field.setAttribute('aria-describedby', `${describedBy} ${errEl.id}`.trim());
   }
   errEl.textContent = msg;
 }
@@ -61,7 +93,15 @@ function clearFieldError(field) {
   field.classList.remove('field-error');
   field.removeAttribute('aria-invalid');
   const errEl = field.parentElement.querySelector('.field-error-msg');
-  if (errEl) errEl.remove();
+  if (errEl) {
+    const describedBy = (field.getAttribute('aria-describedby') || '')
+      .split(' ')
+      .filter(id => id && id !== errEl.id)
+      .join(' ');
+    if (describedBy) field.setAttribute('aria-describedby', describedBy);
+    else field.removeAttribute('aria-describedby');
+    errEl.remove();
+  }
 }
 
 if (form && successEl) {
