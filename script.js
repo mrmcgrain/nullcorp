@@ -153,14 +153,36 @@ if (form && successEl) {
       return;
     }
 
+    const originalLabel = btn.innerHTML;
+    btn.disabled = true;
     btn.setAttribute('aria-busy', 'true');
-    btn.textContent = 'Sending…';
+    btn.textContent = 'Opening email draft…';
 
-    // Simulate async send (replace with real endpoint as needed)
-    await new Promise(r => setTimeout(r, 900));
+    const company = form.querySelector('#intake-company').value.trim();
+    const timeline = form.querySelector('#intake-timeline').value.trim() || 'Not specified';
+    const subject = `NullCorp project brief from ${name}`;
+    const body = [
+      `Name: ${name}`,
+      `Company: ${company || 'Not provided'}`,
+      `Email: ${email}`,
+      `Timeline: ${timeline}`,
+      '',
+      'Brief:',
+      problem
+    ].join('\n');
+    const mailto = `mailto:hello@nullcorp.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    form.hidden = true;
-    successEl.hidden = false;
-    successEl.focus();
+    try {
+      window.location.href = mailto;
+      await new Promise(r => setTimeout(r, 350));
+      form.hidden = true;
+      successEl.hidden = false;
+      successEl.focus();
+    } catch (err) {
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+      btn.innerHTML = originalLabel;
+      showFieldError(problemEl, 'We could not open your email app. Please email hello@nullcorp.dev directly.');
+    }
   });
 }
