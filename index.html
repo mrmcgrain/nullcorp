@@ -23,8 +23,8 @@
     </nav>
     <div class="header-actions">
       <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span></button>
-      <a class="button button-small" href="#contact">Put Ava to work <span aria-hidden="true">↗</span></a>
-      <details class="mobile-nav"><summary aria-label="Open navigation">Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile navigation"><a href="#ava">Meet Ava</a><a href="#capabilities">Capabilities</a><a href="#onboarding">Onboarding</a><a href="#workspace">Frontdesk</a><a href="#contact">Put Ava to work</a></nav></details>
+      <a class="button button-small header-call" href="tel:+14806729219" aria-label="Call Ava at 480 672 9219"><span class="call-dot" aria-hidden="true"></span> Call Ava</a>
+      <details class="mobile-nav"><summary aria-label="Open navigation">Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile navigation"><a href="tel:+14806729219">Call Ava · (480) 672-9219</a><a href="#ava">Meet Ava</a><a href="#capabilities">Capabilities</a><a href="#onboarding">Onboarding</a><a href="#workspace">Frontdesk</a><a href="#contact">Start a conversation</a></nav></details>
     </div>
   </header>
   <main id="main">
@@ -35,13 +35,13 @@
         <h1 class="reveal" id="hero-heading">Your best call<br>starts with <em>Ava.</em></h1>
         <p class="hero-lede reveal">Ava answers the phone, learns what the caller needs, captures the details, books the right time, and gets urgent work to a human. Frontdesk keeps your team in control of every step.</p>
         <div class="hero-actions reveal">
-          <a class="button button-primary" href="#contact">Build my front desk <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#ava">See Ava handle a call <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary hero-call" href="tel:+14806729219" aria-label="Call Ava at 480 672 9219"><span>Call Ava</span><b>(480) 672-9219</b></a>
+          <a class="text-link" href="#call-ava">What should I ask? <span aria-hidden="true">↓</span></a>
         </div>
         <ul class="hero-facts reveal" aria-label="Product facts">
           <li><span>01</span> Answers in real time</li>
           <li><span>02</span> Works after hours</li>
-          <li><span>03</span> Never invents a booking</li>
+          <li><span>03</span> Every call becomes a transcript</li>
         </ul>
       </div>
       <div class="ava-stage reveal" aria-label="Example of Ava handling a live call">
@@ -72,6 +72,26 @@
     <div class="signal-strip" role="list" aria-label="What Frontdesk connects">
       <span role="listitem">OpenAI Realtime</span><span role="listitem">Twilio voice</span><span role="listitem">Google Calendar</span><span role="listitem">Email + Slack</span><span role="listitem">Signed webhooks</span><span role="listitem">Human handoff</span>
     </div>
+
+    <section class="call-ava-band" id="call-ava" aria-labelledby="call-ava-heading">
+      <div class="call-ava-copy reveal">
+        <p class="overline">The demo is the phone call</p>
+        <h2 id="call-ava-heading">Call Ava. Ask what she could do for your business.</h2>
+        <p>There is no canned demo. Ask about missed calls, appointment booking, after-hours coverage, urgent work, lead follow-up, or the tools you already use. Ava will answer in real time and show you how the conversation feels.</p>
+        <a class="call-number" href="tel:+14806729219" aria-label="Call Ava at 480 672 9219">
+          <span>Talk to Ava now</span>
+          <b>(480) 672-9219</b>
+          <i aria-hidden="true">↗</i>
+        </a>
+        <small class="call-disclosure">Calls may be transcribed and reviewed by Null Corp so we can follow up with the context you shared.</small>
+      </div>
+      <ol class="call-flow reveal" aria-label="What happens when you call Ava">
+        <li><span>01</span><div><b>You call</b><small>Ask a real question about your business.</small></div></li>
+        <li><span>02</span><div><b>Ava answers</b><small>Hear how she handles a live conversation.</small></div></li>
+        <li><span>03</span><div><b>Frontdesk transcribes</b><small>The conversation becomes a readable call record.</small></div></li>
+        <li><span>04</span><div><b>We follow up</b><small>Null Corp responds with your needs already in context.</small></div></li>
+      </ol>
+    </section>
 
     <section class="section split-intro" id="ava" aria-labelledby="ava-heading">
       <div class="section-index reveal">01 / Meet Ava</div>
@@ -218,7 +238,10 @@
         <p class="overline">Start with one phone line</p>
         <h2 id="contact-heading">What should happen when your phone rings?</h2>
         <p>Tell us how calls arrive today, which ones matter most, and where the handoff usually breaks. We will map the first Frontdesk setup around the real workflow.</p>
-        <a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev <span aria-hidden="true">↗</span></a>
+        <div class="contact-links">
+          <a href="tel:+14806729219">Call Ava · (480) 672-9219 <span aria-hidden="true">↗</span></a>
+          <a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
       <form class="intake reveal" id="intake-form" novalidate>
         <div class="form-row">
@@ -240,7 +263,7 @@
     </section>
   </main>
   <footer>
-    <div class="footer-main"><a class="brand" href="#top"><span class="brand-mark">N/</span><span>NULL CORP</span></a><p>We build the system behind the answer.</p><a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev</a></div>
+    <div class="footer-main"><a class="brand" href="#top"><span class="brand-mark">N/</span><span>NULL CORP</span></a><p>We build the system behind the answer.</p><div class="footer-contact"><a href="tel:+14806729219">(480) 672-9219</a><a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev</a></div></div>
     <div class="footer-bottom"><span>Frontdesk · Ava · Voice AI · Automation</span><span>© <span id="year">2026</span> Null Corp</span></div>
   </footer>
   <script src="script.js?v=20260907"></script>
