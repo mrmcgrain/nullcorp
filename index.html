@@ -1,312 +1,248 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NullCorp | From nothing to production</title>
-<meta name="description" content="NullCorp builds production-grade web systems, AI automations, agentic pipelines, and security-hardened platforms for teams working beyond the obvious.">
-<meta property="og:title" content="NullCorp | From nothing to production">
-<meta property="og:description" content="Agentic systems. Security-first engineering. Production-grade delivery.">
-<meta property="og:image" content="assets/nullcorp-systems-hero.png">
-<script>
-  try {
-    const savedTheme = localStorage.getItem('nullcorp-theme');
-    document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  } catch {
-    document.documentElement.dataset.theme = 'dark';
-  }
-</script>
-<link rel="preload" as="image" href="assets/nullcorp-systems-hero.png">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Frontdesk by Null Corp | Meet Ava</title>
+  <meta name="description" content="Ava answers, qualifies, schedules, routes, and records every customer call. Frontdesk gives your team control of every conversation.">
+  <meta property="og:title" content="Frontdesk by Null Corp | Meet Ava">
+  <meta property="og:description" content="One receptionist. Every call. A complete operating system behind her.">
+  <meta property="og:image" content="assets/nullcorp-systems-hero.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080a08'/%3E%3Cpath d='M18 45V19h6l16 17V19h6v26h-6L24 28v17z' fill='%23caff38'/%3E%3C/svg%3E">
+  <script src="theme-init.js?v=20260907"></script>
+  <link rel="stylesheet" href="styles.css?v=20260907">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<header id="site-header">
-  <div class="header-inner">
-    <a class="brand" href="#top"><b>N/</b>NULLCORP</a>
-    <div class="header-controls">
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#capabilities">Capabilities</a>
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a class="nav-cta" href="#contact">Start a project</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
-        <span class="theme-icon" aria-hidden="true">◐</span>
-        <span class="theme-label">Theme</span>
-      </button>
-      <details class="mobile-nav">
-        <summary>Menu <span aria-hidden="true">+</span></summary>
-        <nav aria-label="Mobile navigation">
-          <a href="#capabilities">Capabilities</a>
-          <a href="#work">Work</a>
-          <a href="#approach">Approach</a>
-          <a class="nav-cta" href="#contact">Start a project</a>
-        </nav>
-      </details>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-image"></div>
-  <div class="shade"></div>
-  <div class="hero-content">
-    <p class="eyebrow reveal">Agentic systems &middot; Security-first engineering &middot; Production-grade delivery <span>Phoenix / Remote</span></p>
-    <h1 class="reveal">From nothing<br><em>to production.</em></h1>
-    <div class="hero-foot reveal">
-      <p>We design and build high-consequence web systems, AI automation pipelines, and security-hardened platforms for teams working beyond the obvious.</p>
-      <div class="hero-cta-group">
-        <a class="hero-cta" href="#contact">Define the problem <i aria-hidden="true">↗</i></a>
-        <span class="avail-badge" aria-label="Studio status: currently available">
-          <span class="avail-dot" aria-hidden="true"></span>Available for new projects
-        </span>
-      </div>
-    </div>
-  </div>
-  <div class="scroll" aria-hidden="true">Scroll to resolve ———</div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <span>Web systems.</span><b>Agentic pipelines.</b><span>Security hardening.</span><b>AI automations.</b><span>Production, not demos.</span><b>Security-ready delivery.</b><span>Everything connected.</span><b>From nothing to production.</b><span aria-hidden="true">Web systems.</span><b aria-hidden="true">Agentic pipelines.</b><span aria-hidden="true">Security hardening.</span><b aria-hidden="true">AI automations.</b><span aria-hidden="true">Production, not demos.</span><b aria-hidden="true">Security-ready delivery.</b><span aria-hidden="true">Everything connected.</span><b aria-hidden="true">From nothing to production.</b>
-  </div>
-</div>
-
-<!-- PROOF STRIP -->
-<div class="proof-strip" role="list" aria-label="Studio proof points">
-  <div class="proof-strip-item reveal" role="listitem">
-    <span class="proof-stat">Built</span>
-    <span class="proof-label">Production systems, not prototypes</span>
-  </div>
-  <div class="proof-strip-item reveal" role="listitem">
-    <span class="proof-stat">Secure</span>
-    <span class="proof-label">Security designed into delivery</span>
-  </div>
-  <div class="proof-strip-item reveal" role="listitem">
-    <span class="proof-stat">Owned</span>
-    <span class="proof-label">Systems your team can operate</span>
-  </div>
-  <div class="proof-strip-item reveal" role="listitem">
-    <span class="proof-stat">Day&nbsp;1</span>
-    <span class="proof-label">Real infra. Real data. No staging theater.</span>
-  </div>
-</div>
-
-<!-- INTRO / PREMISE -->
-<section class="intro wrap reveal" aria-labelledby="intro-heading">
-  <p class="label" aria-hidden="true">01 / The premise</p>
-  <div>
-    <h2 id="intro-heading">Most software problems are not really software problems.</h2>
-    <p>They are unclear processes, disconnected tools, missing decisions, and edge cases nobody owns. We make the problem legible, then build the system that resolves it.</p>
-  </div>
-</section>
-
-<!-- CAPABILITIES -->
-<section class="wrap capabilities" id="capabilities" aria-labelledby="cap-heading">
-  <div class="section-title reveal">
-    <p class="label" aria-hidden="true">02 / Capabilities</p>
-    <h2 id="cap-heading">Built to work.<br>Built to last.</h2>
-  </div>
-  <div class="ledger">
-    <article class="reveal">
-      <span aria-hidden="true">01</span>
-      <h3>Digital products</h3>
-      <p>Purpose-built websites, platforms, portals, and internal tools from prototype through deployment.</p>
-      <small>Strategy / UX / Engineering</small>
-    </article>
-    <article class="reveal ledger-featured" aria-label="Security engineering — core differentiator">
-      <span aria-hidden="true">02</span>
-      <h3>Security engineering</h3>
-      <p>Threat modeling, hardened auth, OWASP-aware architecture, and penetration testing integrated into delivery — not bolted on after the fact when it costs three times as much to fix.</p>
-      <small>Threat modeling / Pentest / Hardening</small>
-    </article>
-    <article class="reveal">
-      <span aria-hidden="true">03</span>
-      <h3>Agentic engineering</h3>
-      <p>Autonomous AI systems that perceive, decide, and act — grounded in your data, your workflows, and measurable outcomes. Not demos. Not wrappers. Working agents in production.</p>
-      <small>Agents / RAG / LangGraph / Evals</small>
-    </article>
-    <article class="reveal">
-      <span aria-hidden="true">04</span>
-      <h3>Systems automation</h3>
-      <p>Reliable integrations and background systems that remove manual work without creating a black box your team cannot understand or recover from.</p>
-      <small>APIs / Data / Operations</small>
-    </article>
-    <article class="reveal">
-      <span aria-hidden="true">05</span>
-      <h3>Hard problems</h3>
-      <p>Legacy constraints, unusual environments, fragile handoffs, and the last ten percent that determines whether a product survives contact with reality.</p>
-      <small>Architecture / Recovery / Edge cases</small>
-    </article>
-  </div>
-</section>
-
-<!-- MANIFESTO -->
-<section class="manifesto" aria-label="Studio principle">
-  <div class="manifesto-inner wrap">
-    <p class="label">No black boxes</p>
-    <blockquote class="reveal">We do not sell <em>transformation theater.</em> We ship systems your team can understand, operate, and extend.</blockquote>
-  </div>
-</section>
-
-<!-- SELECTED WORK -->
-<section class="wrap work" id="work" aria-labelledby="work-heading">
-  <div class="section-title reveal">
-    <p class="label" aria-hidden="true">03 / Selected work</p>
-    <h2 id="work-heading">Shipped systems.<br>Real constraints.</h2>
-  </div>
-  <div class="work-grid">
-    <article class="work-card reveal">
-      <header class="work-card-head">
-        <span class="work-idx" aria-hidden="true">001</span>
-        <span class="work-tag">Agentic pipeline</span>
-        <span class="work-status" aria-label="Status: Shipped">Shipped</span>
-      </header>
-      <h3>Autonomous document intake</h3>
-      <p>Replaced a 3-day manual review process for a professional services firm with an agent loop that extracts, classifies, validates, and routes documents with human-in-the-loop escalation for edge cases.</p>
-      <div class="work-outcome" aria-label="Delivery approach">Human review retained for edge cases.</div>
-      <footer class="work-stack" aria-label="Stack">Python · LangGraph · RAG · Custom evals</footer>
-    </article>
-    <article class="work-card reveal">
-      <header class="work-card-head">
-        <span class="work-idx" aria-hidden="true">002</span>
-        <span class="work-tag">Security · Web</span>
-        <span class="work-status" aria-label="Status: Shipped">Shipped</span>
-      </header>
-      <h3>Zero-trust client portal</h3>
-      <p>Custom portal built with threat modeling, hardened authentication, OWASP-aware architecture, and a penetration test built into the delivery timeline.</p>
-      <div class="work-outcome" aria-label="Delivery approach">Threat model and penetration test built into delivery.</div>
-      <footer class="work-stack" aria-label="Stack">Next.js · Auth hardening · Pentest · OWASP</footer>
-    </article>
-    <article class="work-card reveal">
-      <header class="work-card-head">
-        <span class="work-idx" aria-hidden="true">003</span>
-        <span class="work-tag">Applied AI</span>
-        <span class="work-status" aria-label="Status: Shipped">Shipped</span>
-      </header>
-      <h3>Production AI co-pilot</h3>
-      <p>Internal LLM tooling for a 40-person ops team. RAG over a proprietary knowledge base, a structured evaluation framework, and a CI/CD pipeline for model version management and rollback.</p>
-      <div class="work-outcome" aria-label="Delivery approach">Evaluation and rollback included from the start.</div>
-      <footer class="work-stack" aria-label="Stack">RAG · LLM · Eval framework · CI/CD</footer>
-    </article>
-  </div>
-  <p class="work-note reveal">Projects shown are anonymized at client request. Details available under NDA.</p>
-</section>
-
-<!-- METHOD -->
-<section class="wrap approach" id="approach" aria-labelledby="approach-heading">
-  <div class="section-title reveal">
-    <p class="label" aria-hidden="true">04 / Method</p>
-    <h2 id="approach-heading">Clarity is the first deliverable.</h2>
-  </div>
-  <ol aria-label="Our process">
-    <li class="reveal">
-      <span class="step-num" aria-hidden="true">01</span>
-      <div>
-        <h3>Interrogate</h3>
-        <p>Find the real constraint, the actual user, the true risk, and the outcome that matters — before writing a single line of code. Most projects fail here because nobody asked the uncomfortable question.</p>
-      </div>
-    </li>
-    <li class="reveal">
-      <span class="step-num" aria-hidden="true">02</span>
-      <div>
-        <h3>Define</h3>
-        <p>Ambiguity becomes a visible architecture, a sequenced scope, and a set of explicit decisions. You can see what is being built and exactly why before it exists.</p>
-      </div>
-    </li>
-    <li class="reveal">
-      <span class="step-num" aria-hidden="true">03</span>
-      <div>
-        <h3>Build</h3>
-        <p>Ship the smallest complete system into the environment where it must perform — not a staging facsimile. Real infrastructure, real data, real edge cases from day one.</p>
-      </div>
-    </li>
-    <li class="reveal">
-      <span class="step-num" aria-hidden="true">04</span>
-      <div>
-        <h3>Harden</h3>
-        <p>Observe real use, close the edge cases, run the security pass, and leave the system ready to evolve — with documentation and architecture your team can actually operate without us.</p>
-      </div>
-    </li>
-  </ol>
-</section>
-
-<!-- CONTACT -->
-<section class="wrap contact" id="contact" aria-labelledby="contact-heading">
-  <p class="label" aria-hidden="true">05 / Contact</p>
-  <div class="contact-copy reveal">
-    <h2 id="contact-heading">Bring us the thing<br>that does not exist yet.</h2>
-    <p>A rough brief is enough. Tell us what is broken, missing, or still undefined. We'll respond within one business day.</p>
-  </div>
-  <form class="intake reveal" id="intake-form" novalidate>
-    <div class="intake-row">
-      <div class="intake-field">
-        <label for="intake-name">Name</label>
-        <input type="text" id="intake-name" name="name" autocomplete="name" placeholder="Your name" required>
-      </div>
-      <div class="intake-field">
-        <label for="intake-company">Company <span class="optional">(optional)</span></label>
-        <input type="text" id="intake-company" name="company" autocomplete="organization" placeholder="Organization or context">
-      </div>
-    </div>
-    <div class="intake-field">
-      <label for="intake-email">Email</label>
-      <input type="email" id="intake-email" name="email" autocomplete="email" placeholder="you@company.com" required>
-    </div>
-    <div class="intake-field">
-      <label for="intake-problem">What are you building or trying to fix?</label>
-      <textarea id="intake-problem" name="problem" rows="4" placeholder="Describe the problem, system, or constraint. Rough is fine." required></textarea>
-    </div>
-    <div class="intake-row intake-row-bottom">
-      <div class="intake-field">
-        <label for="intake-timeline">Timeline</label>
-        <select id="intake-timeline" name="timeline">
-          <option value="">Select one</option>
-          <option value="urgent">Urgent — need to move now</option>
-          <option value="1-3mo">1–3 months</option>
-          <option value="3-6mo">3–6 months</option>
-          <option value="exploring">Exploring options</option>
-        </select>
-      </div>
-      <div class="intake-field intake-submit-wrap">
-        <button type="submit" class="intake-submit">Send brief <span aria-hidden="true">↗</span></button>
-      </div>
-    </div>
-    <p class="intake-alt">Prefer email? <a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev</a></p>
-  </form>
-  <div class="intake-success" id="intake-success" hidden aria-live="polite" tabindex="-1">
-    <p class="intake-success-msg"><b>Email draft ready.</b> Your email app should open with the brief filled in. If it does not, send it directly to hello@nullcorp.dev.</p>
-    <a class="email" href="mailto:hello@nullcorp.dev">hello@nullcorp.dev <b>↗</b></a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="footer-top">
-    <a class="footer-email-link" href="mailto:hello@nullcorp.dev">hello@nullcorp.dev <span aria-hidden="true">↗</span></a>
-    <span class="footer-avail">
-      <span class="avail-dot" aria-hidden="true"></span>Currently taking on new work
-    </span>
-  </div>
-  <div class="footer-bottom">
-    <a class="brand" href="#top"><b>N/</b>NULLCORP</a>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="#capabilities">Capabilities</a>
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="Null Corp home"><span class="brand-mark" aria-hidden="true">N/</span><span>NULL CORP</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#ava">Meet Ava</a><a href="#capabilities">Capabilities</a><a href="#onboarding">Onboarding</a><a href="#workspace">Frontdesk</a>
     </nav>
-    <p class="footer-copy">Web · AI · Security · Agents · &copy; <span id="year">2026</span></p>
-  </div>
-</footer>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span></button>
+      <a class="button button-small" href="#contact">Put Ava to work <span aria-hidden="true">↗</span></a>
+      <details class="mobile-nav"><summary aria-label="Open navigation">Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile navigation"><a href="#ava">Meet Ava</a><a href="#capabilities">Capabilities</a><a href="#onboarding">Onboarding</a><a href="#workspace">Frontdesk</a><a href="#contact">Put Ava to work</a></nav></details>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="kicker reveal"><span class="status-dot"></span> Frontdesk by Null Corp</div>
+        <h1 class="reveal" id="hero-heading">Your best call<br>starts with <em>Ava.</em></h1>
+        <p class="hero-lede reveal">Ava answers the phone, learns what the caller needs, captures the details, books the right time, and gets urgent work to a human. Frontdesk keeps your team in control of every step.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#contact">Build my front desk <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#ava">See Ava handle a call <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="hero-facts reveal" aria-label="Product facts">
+          <li><span>01</span> Answers in real time</li>
+          <li><span>02</span> Works after hours</li>
+          <li><span>03</span> Never invents a booking</li>
+        </ul>
+      </div>
+      <div class="ava-stage reveal" aria-label="Example of Ava handling a live call">
+        <div class="stage-halo"></div>
+        <div class="call-card">
+          <header class="call-head">
+            <div><span class="call-avatar">A</span><span><b>Ava</b><small>Live receptionist</small></span></div>
+            <span class="live-pill"><i></i> Live call · 01:42</span>
+          </header>
+          <div class="waveform" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="transcript">
+            <div class="utterance caller"><span>Caller</span><p>Our water heater is leaking. Could someone come tomorrow afternoon?</p></div>
+            <div class="utterance ava"><span>Ava</span><p>I can help. Is water actively spreading, or is the leak contained?</p></div>
+          </div>
+          <div class="call-actions" aria-label="Actions Ava has taken">
+            <span><i>✓</i> Lead captured</span>
+            <span><i>✓</i> Urgency checked</span>
+            <span class="working"><i></i> Checking calendar</span>
+          </div>
+        </div>
+        <div class="stage-note note-one"><small>Next action</small><b>Offer 2:30 PM</b></div>
+        <div class="stage-note note-two"><small>Team alert</small><b>Dispatch notified</b></div>
+      </div>
+    </section>
 
-<script src="script.js?v=20260712-formfix"></script>
+    <div class="signal-strip" role="list" aria-label="What Frontdesk connects">
+      <span role="listitem">OpenAI Realtime</span><span role="listitem">Twilio voice</span><span role="listitem">Google Calendar</span><span role="listitem">Email + Slack</span><span role="listitem">Signed webhooks</span><span role="listitem">Human handoff</span>
+    </div>
+
+    <section class="section split-intro" id="ava" aria-labelledby="ava-heading">
+      <div class="section-index reveal">01 / Meet Ava</div>
+      <div class="split-copy">
+        <p class="overline reveal">A receptionist with rules, memory, and a next step</p>
+        <h2 class="reveal" id="ava-heading">Ava does more than pick up. She closes the gap between a ringing phone and work on the calendar.</h2>
+        <p class="large-copy reveal">She knows your hours, services, service area, policies, pricing boundaries, emergency rules, and escalation paths. She asks one useful question at a time, keeps callers on track, and records what your team needs to act.</p>
+      </div>
+    </section>
+    <section class="section capability-section" id="capabilities" aria-labelledby="capabilities-heading">
+      <div class="section-head reveal">
+        <div><p class="overline">One call. Every next step.</p><h2 id="capabilities-heading">The whole front desk,<br>working as one system.</h2></div>
+        <p>Every action follows your configuration. Ava can move fast without making promises the business cannot keep.</p>
+      </div>
+      <div class="bento">
+        <article class="cap-card cap-card-wide reveal">
+          <div class="cap-number">01</div>
+          <div><span class="cap-icon" aria-hidden="true">⌁</span><h3>Answer every inbound call</h3><p>Ava opens with your greeting, handles natural interruptions, ignores coughs and background noise, and closes cleanly when the caller is finished.</p></div>
+          <div class="mini-call" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </article>
+        <article class="cap-card reveal">
+          <div class="cap-number">02</div><span class="cap-icon" aria-hidden="true">◎</span>
+          <h3>Qualify and capture leads</h3>
+          <p>Name, callback number, service address, problem, urgency, preferred timing, and access notes. Corrections update the same lead instead of creating a mess.</p>
+          <div class="data-chips" aria-hidden="true"><span>Name</span><span>Need</span><span>Urgency</span><span>Address</span></div>
+        </article>
+        <article class="cap-card cap-card-acid reveal">
+          <div class="cap-number">03</div><span class="cap-icon" aria-hidden="true">◫</span>
+          <h3>Book with calendar truth</h3>
+          <p>Ava checks the selected Google Calendar, applies hours, notice, duration, and buffer rules, then confirms only after the calendar accepts the event.</p>
+          <div class="slot-card" aria-hidden="true"><small>Tomorrow</small><b>2:30 PM</b><span>Available</span></div>
+        </article>
+        <article class="cap-card cap-card-dark reveal">
+          <div class="cap-number">04</div><span class="cap-icon" aria-hidden="true">!</span>
+          <h3>Recognize urgent work</h3>
+          <p>Rules turn a risky call into a durable incident. Ava can send the first alert, work an acknowledgement ladder, and surface exhausted escalations to a manager.</p>
+          <div class="escalation" aria-hidden="true"><i></i><span>Dispatcher</span><i></i><span>On-call</span><i></i><span>Manager</span></div>
+        </article>
+        <article class="cap-card reveal">
+          <div class="cap-number">05</div><span class="cap-icon" aria-hidden="true">↗</span>
+          <h3>Transfer by policy</h3>
+          <p>Approved destinations stay encrypted and allowlisted. Ava requests a blind transfer only when your business rules permit it.</p>
+          <p class="truth-note">A transfer request is recorded separately from a human answer.</p>
+        </article>
+        <article class="cap-card cap-card-wide reveal">
+          <div class="cap-number">06</div>
+          <div><span class="cap-icon" aria-hidden="true">☾</span><h3>Run a different playbook after hours</h3><p>Keep answering when the office closes. Ava can take a standard message, capture an appointment request, classify an urgent incident, notify on-call staff, or attempt an approved transfer.</p></div>
+          <div class="hours-panel" aria-hidden="true"><small>Office closed</small><div><span>Routine</span><b>Capture + follow-up</b></div><div><span>Urgent</span><b>Escalate now</b></div></div>
+        </article>
+      </div>
+    </section>
+    <section class="principle-band" aria-labelledby="principle-heading">
+      <p class="overline">A hard product rule</p>
+      <h2 id="principle-heading">Ava never fakes the next step.</h2>
+      <p>A request is a request. A delivered message is a delivered message. A booked appointment is booked only after the calendar confirms it. That distinction is small until your customer is waiting.</p>
+    </section>
+    <section class="section workspace-section" id="workspace" aria-labelledby="workspace-heading">
+      <div class="workspace-copy reveal">
+        <p class="overline">Frontdesk workspace</p>
+        <h2 id="workspace-heading">Everything Ava hears. Everything your team needs.</h2>
+        <p>Frontdesk turns each conversation into an operating record. Managers can review the call, act on the lead, tune Ava, and see what happened next without digging through phone logs.</p>
+        <ul class="workspace-list">
+          <li><span>01</span><div><b>Calls and transcripts</b><small>Conversation history, outcome, duration, and post-call summary.</small></div></li>
+          <li><span>02</span><div><b>Leads and follow-ups</b><small>One action queue for active opportunities and captured customer needs.</small></div></li>
+          <li><span>03</span><div><b>Appointments</b><small>Pending requests, confirmed bookings, and scheduling actions from the call record.</small></div></li>
+          <li><span>04</span><div><b>Control and accountability</b><small>Receptionist settings, integrations, usage, billing, inbox, roles, and audit history.</small></div></li>
+        </ul>
+      </div>
+      <div class="dashboard-shell reveal" aria-label="Frontdesk workspace preview">
+        <aside>
+          <div class="dash-brand"><i>F</i> Frontdesk</div>
+          <nav aria-label="Preview navigation"><span class="active">Overview</span><span>Calls</span><span>Follow-ups</span><span>Appointments</span><span>Settings</span></nav>
+          <small>AC<br>Acme Plumbing</small>
+        </aside>
+        <div class="dash-main">
+          <header><div><small>MONDAY, SEPT 7</small><b>Good morning.</b></div><span>●</span></header>
+          <div class="dash-metrics"><article><small>Calls today</small><b>18</b><em>+4 this week</em></article><article><small>New leads</small><b>11</b><em>7 need follow-up</em></article><article><small>Booked</small><b>6</b><em>Calendar confirmed</em></article></div>
+          <div class="dash-panels">
+            <section><header><b>Recent calls</b><small>View all</small></header><div class="call-row"><i class="urgent">!</i><span><b>Water heater leak</b><small>Jamie R. · 2 min ago</small></span><em>Urgent</em></div><div class="call-row"><i>✓</i><span><b>Drain cleaning</b><small>Marcus T. · 14 min ago</small></span><em>Booked</em></div><div class="call-row"><i>↗</i><span><b>Existing customer</b><small>Sam P. · 31 min ago</small></span><em>Follow-up</em></div></section>
+            <section class="dash-activity"><header><b>Ava is working</b></header><p><i></i><span><b>Appointment created</b><small>Today at 2:30 PM</small></span></p><p><i></i><span><b>Dispatch acknowledged</b><small>Water heater leak</small></span></p><p><i></i><span><b>Lead captured</b><small>Drain cleaning</small></span></p></section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section integrations-section" aria-labelledby="integrations-heading">
+      <div class="section-head reveal">
+        <div><p class="overline">Connections</p><h2 id="integrations-heading">Fit Ava into the way<br>your business already works.</h2></div>
+        <p>Frontdesk keeps provider credentials encrypted and tenant-scoped. Each connection has a visible readiness state, so a configured account is never mistaken for a tested workflow.</p>
+      </div>
+      <div class="integration-grid reveal" role="list">
+        <div role="listitem"><b>Google Calendar</b><span class="ready">Direct booking</span></div>
+        <div role="listitem"><b>Twilio</b><span class="ready">Voice + alerts</span></div>
+        <div role="listitem"><b>Email</b><span class="ready">Lead delivery</span></div>
+        <div role="listitem"><b>Slack</b><span class="ready">Team delivery</span></div>
+        <div role="listitem"><b>Zapier</b><span class="ready">Signed webhook</span></div>
+        <div role="listitem"><b>Calendly</b><span>Connection path</span></div>
+        <div role="listitem"><b>ServiceTitan</b><span>Controlled setup</span></div>
+        <div role="listitem"><b>Housecall Pro</b><span>Approved access</span></div>
+      </div>
+      <p class="integration-note reveal">Provider-specific connections may require account approval, credentials, and a live acceptance test before launch.</p>
+    </section>
+    <section class="section onboarding-section" id="onboarding" aria-labelledby="onboarding-heading">
+      <div class="onboarding-intro reveal">
+        <p class="overline">Admin-led onboarding</p>
+        <h2 id="onboarding-heading">We do not hand you a prompt and wish you luck.</h2>
+        <p>Null Corp configures the business, rehearses the edge cases, and holds activation until the system passes its launch checks. Your team sees every decision before Ava takes a live call.</p>
+        <a class="text-link" href="#contact">Start the setup conversation <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="onboarding-track">
+        <li class="reveal"><span>01</span><div><small>Invite and workspace</small><h3>We create your Frontdesk account.</h3><p>Your owner receives a single-use invitation. The workspace starts in draft, with no live routing and no accidental calls.</p></div></li>
+        <li class="reveal"><span>02</span><div><small>Business profile</small><h3>Teach Ava the business.</h3><p>We load services, hours, service area, policies, FAQs, pricing boundaries, holiday behavior, and emergency rules.</p></div></li>
+        <li class="reveal"><span>03</span><div><small>Phone and receptionist</small><h3>Choose how calls arrive and how Ava speaks.</h3><p>Use a dedicated number, forward your existing line, or route only after-hours calls. Then set Ava's name, voice, greeting, questions, silence behavior, and transfer rules.</p></div></li>
+        <li class="reveal"><span>04</span><div><small>Booking and notifications</small><h3>Define what happens after the call.</h3><p>Connect Google Calendar for direct booking, use staff-confirmed requests, or capture leads only. Choose which events reach email, Slack, SMS, or a signed webhook.</p></div></li>
+        <li class="reveal"><span>05</span><div><small>Rehearsal</small><h3>Try to break it before a customer can.</h3><p>Run scripted cases for greeting, silence, FAQs, rambling callers, lead capture, booking failure, after-hours behavior, transfer, and tool outages. Then talk to Ava in a live browser rehearsal.</p></div></li>
+        <li class="reveal"><span>06</span><div><small>Approval and activation</small><h3>Launch only when the evidence is current.</h3><p>Frontdesk checks business data, phone routing, receptionist settings, booking safety, integration health, notifications, and configuration stability. Any critical edit makes the old result stale and requires a new check.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section control-section" aria-labelledby="control-heading">
+      <div class="control-card reveal">
+        <div><p class="overline">Built by Null Corp</p><h2 id="control-heading">The automation is useful because the controls are real.</h2></div>
+        <div class="control-grid">
+          <article><span>01</span><h3>Tenant isolation</h3><p>Phone routing, calls, transcripts, leads, tools, credentials, bookings, and users stay scoped to the right business.</p></article>
+          <article><span>02</span><h3>Fail-closed routing</h3><p>Unknown, disabled, suspended, or incomplete phone routes are rejected. Ava never falls back to another company's configuration.</p></article>
+          <article><span>03</span><h3>Encrypted secrets</h3><p>Provider credentials and notification destinations stay encrypted server-side and never enter Ava's prompt.</p></article>
+          <article><span>04</span><h3>Traceable outcomes</h3><p>Calls, transcript turns, tool activity, booking results, notifications, incident states, and administrator changes leave records.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section faq-section" aria-labelledby="faq-heading">
+      <div><p class="overline">Questions worth asking</p><h2 id="faq-heading">Before Ava answers.</h2></div>
+      <div class="faq-list">
+        <details class="reveal"><summary>Does Ava pretend to be a person?<span>+</span></summary><p>No. If a caller asks, Ava says she is the business's virtual receptionist, then gets back to helping.</p></details>
+        <details class="reveal"><summary>What happens when Ava does not know an answer?<span>+</span></summary><p>She says she does not want to give incorrect information, captures the question, and routes it for human follow-up. She does not invent prices, policies, availability, names, or customer records.</p></details>
+        <details class="reveal"><summary>Can we keep our current number?<span>+</span></summary><p>Yes. Frontdesk can work with a dedicated number, forwarding from an existing business line, later porting, or an after-hours forwarding pattern. The final route depends on your carrier and call flow.</p></details>
+        <details class="reveal"><summary>Can Ava book appointments herself?<span>+</span></summary><p>Yes, when direct booking is enabled and a writable Google Calendar passes connection checks. You can also start in staff-confirmed request mode or lead-only mode.</p></details>
+        <details class="reveal"><summary>What does my team manage after launch?<span>+</span></summary><p>Your managers can review calls and transcripts, work leads, schedule follow-ups, manage appointments, tune business and receptionist settings, inspect usage and billing, and read account and system notices.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-copy reveal">
+        <p class="overline">Start with one phone line</p>
+        <h2 id="contact-heading">What should happen when your phone rings?</h2>
+        <p>Tell us how calls arrive today, which ones matter most, and where the handoff usually breaks. We will map the first Frontdesk setup around the real workflow.</p>
+        <a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev <span aria-hidden="true">↗</span></a>
+      </div>
+      <form class="intake reveal" id="intake-form" novalidate>
+        <div class="form-row">
+          <label>Name<input id="intake-name" name="name" autocomplete="name" maxlength="120" required placeholder="Your name"></label>
+          <label>Business<input id="intake-company" name="company" autocomplete="organization" maxlength="160" placeholder="Company name"></label>
+        </div>
+        <label>Work email<input id="intake-email" name="email" autocomplete="email" type="email" maxlength="254" required placeholder="you@company.com"></label>
+        <div class="form-row">
+          <label>Calls each month<select id="intake-volume" name="volume"><option value="Not sure">Not sure yet</option><option value="Under 100">Under 100</option><option value="100 to 500">100 to 500</option><option value="500 to 2,000">500 to 2,000</option><option value="More than 2,000">More than 2,000</option></select></label>
+          <label>First priority<select id="intake-priority" name="priority"><option value="Answer every call">Answer every call</option><option value="Book appointments">Book appointments</option><option value="After-hours coverage">After-hours coverage</option><option value="Urgent dispatch">Urgent dispatch</option><option value="Lead capture and follow-up">Lead capture and follow-up</option></select></label>
+        </div>
+        <label>Walk us through a typical call<textarea id="intake-problem" name="problem" rows="5" maxlength="2000" required placeholder="What does the caller need, what should Ava know, and what should happen next?"></textarea></label>
+        <button class="button button-primary form-submit" type="submit">Send the call flow <span aria-hidden="true">↗</span></button>
+        <p class="form-note">This opens a prepared email in your email app.</p>
+      </form>
+      <div class="intake-success" id="intake-success" hidden tabindex="-1" aria-live="polite">
+        <p class="overline">Brief ready</p><h3>Your email app should be open.</h3><p>If it did not open, send the call flow directly to <a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev</a>.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-main"><a class="brand" href="#top"><span class="brand-mark">N/</span><span>NULL CORP</span></a><p>We build the system behind the answer.</p><a href="mailto:hello@nullcorp.dev">hello@nullcorp.dev</a></div>
+    <div class="footer-bottom"><span>Frontdesk · Ava · Voice AI · Automation</span><span>© <span id="year">2026</span> Null Corp</span></div>
+  </footer>
+  <script src="script.js?v=20260907"></script>
 </body>
 </html>
